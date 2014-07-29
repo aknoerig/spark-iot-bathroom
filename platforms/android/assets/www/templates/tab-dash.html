@@ -1,0 +1,40 @@
+<ion-view title="Bathroom">
+  <ion-content class="has-header padding">
+
+	<ul class="list">
+	  <li class="item item-toggle">
+	     {{ statusMsg }}
+	     <label class="toggle toggle-assertive">
+	       <input type="checkbox" ng-model="lockStatus">
+	       <div class="track">
+	         <div class="handle"></div>
+	       </div>
+	     </label>
+	  </li>
+	</ul>
+
+    <button class="button button-block button-positive" ng-click="onButtonClick()" ng-hide="!lockStatus">
+  		Knock
+	</button>
+
+<!--
+	<div class="list">
+	  <div class="item range range-assertive">
+	    <i class="icon ion-ios7-sunny-outline"></i>
+	    <input type="range" name="volume" min="0" max="100" value="33">
+	    <i class="icon ion-ios7-sunny"></i>
+	  </div>
+	  <div class="item range range-balanced">
+	    <i class="icon ion-ios7-sunny-outline"></i>
+	    <input type="range" name="volume" min="0" max="100" value="33">
+	    <i class="icon ion-ios7-sunny"></i>
+	  </div>
+	  <div class="item range range-positive">
+	    <i class="icon ion-ios7-sunny-outline"></i>
+	    <input type="range" name="volume" min="0" max="100" value="33">
+	    <i class="icon ion-ios7-sunny"></i>
+	  </div>
+	</div>
+-->
+  </ion-content>
+</ion-view>

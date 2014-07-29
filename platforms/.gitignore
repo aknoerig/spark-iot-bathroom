@@ -1,0 +1,8 @@
+ant-build/
+ant-gen/
+assets/www
+cordova/
+CordovaLib/
+platform_www/
+res/xml/config.xml
+local.properties

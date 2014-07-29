@@ -1,0 +1,22 @@
+<ion-view title="Bathroom">
+  <ion-content class="has-header padding">
+
+	<ul class="list">
+	  <li class="item item-toggle">
+	     {{ statusMsg }}
+	     <label class="toggle toggle-assertive">
+	       <input type="checkbox" ng-model="lockStatus">
+	       <div class="track">
+	         <div class="handle"></div>
+	       </div>
+	     </label>
+	  </li>
+	</ul>
+
+    <button class="button button-block button-positive" ng-click="onButtonClick()" ng-hide="!lockStatus">
+  		Knock
+	</button>
+
+
+  </ion-content>
+</ion-view>
